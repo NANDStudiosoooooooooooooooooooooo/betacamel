@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> <meta name="google-adsense-account" content="ca-pub-2241294144673150">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nand Studios</title>
+    <div id="video-container">
+        <!-- Hier dein Video einbetten -->
+        <video playsinline autoplay muted loop>
+            <source src="" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
+    
+     
+
+    
+    <style>
+        body {
+            background-image: url('backg.png');
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;s
+            font-family: 'Helvetica Neue', Arial, sans-serif; /* Ähnliche Schriftart */
+            color: #fff;
+        }
+        
+
+        #header {
+            background: rgb(255, 255, 255); /* Weißer Hintergrund für Header */
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1; /* Schicht für Hover-Effekt */
+            display: flex; /* Flexbox verwenden */
+            justify-content: space-between; /* Buttons nebeneinander ausrichten */
+            padding: 10px 20px; /* Padding für den Header */
+        }
+
+        #header a {
+            color: #000; /* Schwarzer Text */
+            text-decoration: none;
+            flex: 1; /* Gleichmäßige Verteilung der Breite auf Buttons */
+            text-align: center;
+            transition: background-color 0.3s, opacity 0.3s; /* Hover-Effekt */
+            user-select: none; /* Text nicht auswählbar machen */
+            padding: 5px; /* Padding für die Buttons */
+        }
+
+        #header a:hover {
+            background-color: rgba(192, 192, 192, 0.055); /* Transparent beim Hover */
+            opacity: 0.7; /* Leicht transparent beim Hover */
+        }
+
+        #logo-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            white-space: nowrap; /* Text nicht umbrechen */
+            max-width: calc(100% - 40px); /* Das Logo kann 40px kleiner als das Fenster sein */
+        }
+
+        #logo {
+            font-size: calc(12em - 20%); /* Größe anpassen: 20% kleiner als die Fensterbreite */
+            font-weight: bold;
+            text-transform: none; /* Keine Großbuchstaben */
+            letter-spacing: 0.02em; /* Kleinerer Buchstabenabstand */
+            background-size: cover; /* Bildgröße anpassen */
+            -webkit-background-clip: text;
+            color: transparent;
+            user-select: none; /* Text nicht auswählbar machen */
+            max-width: 100%; /* Das Logo kann nicht breiter als das Fenster sein */
+            max-height: 80%; /* Das Logo kann nicht höher als 80% des Fensters sein */
+        }
+
+        /* Dropdown-Menü für kleinere Bildschirme */
+        #dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            background: #f2f2f2; /* Grauer Hintergrund für das Dropdown-Menü */
+        }
+
+        
+
+        /* Media Query für kleinere Bildschirme */
+        @media (max-width: 1100px) {
+            #menu-button-label {
+                display: none;
+            }
+
+            #header a {
+                display: none; /* Verstecke normale Buttons */
+            }
+
+        
+
+            #header #menu-button-label {
+                display: block; /* Zeige den "MENU"-Button */
+                color: #000; /* Ändere die Textfarbe auf Schwarz */
+                cursor: pointer; /* Ändere den Cursor auf Zeiger */
+                padding: 5px; /* Padding für den "MENU"-Button hinzufügen */
+                text-align: left; /* Text linksbündig ausrichten */
+            }
+
+            
+
+            /* Ändere die Anordnung der Buttons im Dropdown-Menü auf untereinander */
+            #dropdown-menu a {
+                display: block;
+                text-align: left; /* Text linksbündig ausrichten */
+                padding: 5px; /* Padding für die Buttons im Dropdown-Menü */
+            }
+
+            
+
+            /* MENU-Button immer im Header, ganz links */
+            #header #menu-button-label {
+                display: block;
+                color: #000; /* Textfarbe schwarz */
+                cursor: pointer;
+                padding: 5px;
+                text-align: left; /* Text linksbündig ausrichten */
+            }
+        }
+
+        /* Footer-Stil */
+        #footer {
+            background: white;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+        }
+
+        #footer-text {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="header">
+        <label id="menu-button-label" class="hide-on-large"></label>
+        
+        <div id="dropdown-menu">
+            <a href="#" onclick="location.reload(); return false;">NAND-STUDIOS.COM</a>
+            <a href="https://nandstudios.itch.io/camelsimulator" target="_blank">CAMELSIMULATOR ITCH</a>
+            <a href="https://nandstudios.itch.io/capyrun-roadrun" target="_blank">ROADRUN</a>
+            <a href="https://nandstudios.itch.io/bananaclicker" target="_blank">BANANACLICKER</a>
+        </div>
+        <a href="#" onclick="location.reload(); return false;">NAND-STUDIOS.COM</a>
+        <a href="https://www.dropbox.com/scl/fi/ck66zw8dzg7npxm5be34w/CamelSimulatorBeta.zip?rlkey=y5v5dv05ks4yjttpj28t8obbh&dl=1" target="_blank">CAMELSIMULATOR DOWNLOAD</a>
+        <a href="https://nandstudios.itch.io/capyrun-roadrun" target="_blank">ROADRUN</a>
+        <a href="https://nandstudios.itch.io/bananaclicker" target="_blank">BANANACLICKER</a>
+    </div>
+    
+
+    <div id="logo-container">
+        <div id="logo">
+            Nand Studios
+        </div>
+    </div>
+
+    
+    
+    </script>
+    <!-- JavaScript, um das Hintergrundbild festzulegen -->
+    <script>
+        var logo = document.getElementById("logo");
+        var backgroundImage = new Image();
+        backgroundImage.src = 'static_png2_2.png'; // Hier den Bildpfad angeben
+
+        backgroundImage.onerror = function() {
+            // Wenn das Bild nicht geladen werden kann, setze den Text auf Schwarz
+            logo.style.backgroundImage = 'none';
+            logo.style.color = '#000';
+        }
+
+        backgroundImage.onload = function() {
+            // Wenn das Bild geladen wurde, setze es als Hintergrundbild
+            logo.style.backgroundImage = 'url(backg1.jpg)';
+        }
+
+        // JavaScript, um das Logo proportional zur Bildschirmbreite zu skalieren
+        function resizeLogo() {
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            var fontSize = (screenWidth / 1080) * (12 * 0.65) + 'em'; // 20% kleiner als die Fensterbreite
+            logo.style.fontSize = fontSize;
+        }
+
+        // Initialisierung der Logo-Größe und erneute Berechnung bei Änderungen der Fenstergröße
+        window.onload = resizeLogo;
+        window.onresize = resizeLogo;
+    </script>
+
+    
+
+<script>
+    // JavaScript, um das Menü zu steuern
+    var menuVisible = false;
+    var menuButton = document.getElementById('menu-button-label');
+    var dropdownMenu = document.getElementById('dropdown-menu');
+
+    menuButton.addEventListener('click', function() {
+            if (!menuVisible) {
+                dropdownMenu.style.display = 'block';
+                menuButton.textContent = '> MENU';
+                menuVisible = true;
+            } else {
+                dropdownMenu.style.display = 'none';
+                menuButton.textContent = 'MENU';
+                menuVisible = false;
+            }
+        });
+
+    // Event Listener, um das Menü zu schließen, wenn außerhalb geklickt wird
+    document.addEventListener('click', function(event) {
+        var isClickInsideMenu = dropdownMenu.contains(event.target);
+        var isClickOnMenuButton = (event.target === menuButton);
+        
+        if (!isClickInsideMenu && !isClickOnMenuButton) {
+            dropdownMenu.style.display = 'none';
+            menuButton.textContent = 'MENU';
+            menuVisible = false;
+        }
+    });
+</script>
+
+
+
+
+
+
+    <!-- Zusätzlicher Inhalt, um die Seite scrollbar zu machen -->
+    <div id="content"></div>
+    <div id="footer">
+        <p id="footer-text">© NAND STUDIOS 2023</p>
+    </div>
+
+    <div class="footer">
+        
+        <a href="mailto:help@nand-studios.com" id="email-button-footer">EMAIL help@nand-studios.com</a>
+        <p class="footer-text">© NAND STUDIOS 2023</p>
+    </div>
+</body>
+
+<style>
+    .footer {
+        background: white;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-text,
+    #email-button-footer {
+        color: #000;
+    }
+
+    /* Email-Button im Footer */
+    #email-button-footer {
+        display: block;
+        color: #000; /* Textfarbe schwarz */
+        text-decoration: none;
+        text-align: center;
+        transition: background-color 0.3s, opacity 0.3s;
+        user-select: none;
+        padding: 5px;
+        margin: 0 auto; /* Zentriert den Button horizontal */
+    }
+</style>
+
+
+</html>
